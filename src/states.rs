@@ -28,3 +28,15 @@ pub struct Fill {
     pub price: u64,
     pub qty: u64,
 }
+
+#[derive(Debug, Serialize)]
+pub struct Snapshot {
+    pub bids: Vec<State>,
+    pub asks: Vec<State>,
+}
+
+#[derive(Debug, Serialize)]
+pub struct State {
+    pub price: u64,
+    pub qty: u64,
+}

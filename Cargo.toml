@@ -6,7 +6,7 @@ edition = "2024"
 [dependencies]
 anyhow = "1.0.102"
 axum = { version = "0.8.9", features = ["macros", "ws"] }
-future-utils = "0.12.1"
+futures-util = "0.3.32"
 redis = { version = "1.2.0", features = ["connection-manager", "tokio-comp"] }
 serde = { version = "1.0.228", features = ["derive"] }
 serde_json = "1.0.149"

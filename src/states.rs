@@ -6,12 +6,12 @@ pub enum Side {
     Sell,
 }
 
-// #[derive(Debug, Deserialize)]
-// pub struct OrderRequest {
-//     pub side: Side,
-//     pub price: u64,
-//     pub qty: u64,
-// }
+#[derive(Debug, Deserialize)]
+pub struct OrderRequest {
+    pub side: Side,
+    pub price: u64,
+    pub qty: u64,
+}
 
 #[derive(Debug, Clone, Deserialize, Serialize, PartialEq, Eq)]
 pub struct Order {
